@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<!--
+    INFORMATIONS 1:
+    VOICI LE MODELE DE COMMENTAIRE STANDARD EST CELUI DANS LEQUEL J'ECRIS CE TEXTE
+
+-->
+
+<!-- INFORMATIONS 2: les petites annonces seront affichées comme cela -->
+
+
+
+<head>
+    <!--
+		LES BALISES METAS
+	-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Selowiner Group pour L'ONG N'Gboadô">
+
+    <!--
+		LES BALISES DE STYLES (LIENS BOOTSTRAP 4, LE LIEN CSS DE LA PAGE ET POLICE DE CARACTERE DE GOOGLE FONT EN LIGNE)
+	-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/RS-communaute-forum.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+    <!--
+		FAVICON LOGO DE N'GBOADÔ
+	-->
+    <link rel="icon" type="image/png" href="ressources/icon/logo.png" />
+
+    <!--
+		TITRE DE LA PAGE
+	-->
+    <title> N'gboadô | Forum </title>
+</head>
+
+<body>
+
+    <!--
+		BALISE HEADER DEBUT
+	-->
+    <header>
+
+
+        <!--
+            LA PREMIERE NAVBAR DE HAUT DEBUT
+        -->
+        <div class="container-fluid navbar-top-block">
+            <div class="row">
+
+                <!-- BLOCK DE GAUCHE AVEC COULEUR EN FOND -->
+                <div class="block-gauche-background">
+                    
+                    <h4> 
+                        <svg class="bi bi-chat-quote-fill" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766c.087.124.163.26.227.401.428.948.393 2.377-.942 3.706a.446.446 0 0 1-.612.01.405.405 0 0 1-.011-.59c.419-.416.672-.831.809-1.22-.269.165-.588.26-.93.26C4.775 9.333 4 8.587 4 7.667 4 6.747 4.776 6 5.734 6c.271 0 .528.06.756.166l.008.004c.169.07.327.182.469.324.085.083.161.174.227.272zM11 9.073c-.269.165-.588.26-.93.26-.958 0-1.735-.746-1.735-1.666 0-.92.777-1.667 1.734-1.667.271 0 .528.06.756.166l.008.004c.17.07.327.182.469.324.085.083.161.174.227.272.087.124.164.26.228.401.428.948.392 2.377-.942 3.706a.446.446 0 0 1-.613.01.405.405 0 0 1-.011-.59c.42-.416.672-.831.81-1.22z"/>
+                        </svg> 
+                        <span>FORUM CHAT</span> 
+                    </h4>
+                </div>
+
+
+                <!-- BLOCK DE NAVIGATION A DROITE -->
+                <div class="block-droite-navbar">
+                    <div class="row">
+
+                        <!-- INFO DE SESSION DU USER DANS LA NAVBAR -->
+                        <div class="profil-user-session-info-forum">
+                            <a class="navbar-brand">
+                                <img src="ressources/icon/RS-paul.jpg" height="40" class="img-user-session-info-1">
+                                <span class="session-name"> Paul Niango </span>
+                                <span class="session-during session-during-2"> &nbsp; - &nbsp; Something here  </span>                            
+                            </a>
+                        </div>
+
+
+                        <!-- SEARCH BAR DANS LA NAVBAR -->
+                        <div class="searchbar-block">
+                            <form class="form-inline ml-auto">
+                                <div class="md-form my-0">
+                                  <input class="form-control" type="text" placeholder="Search Here..." aria-label="Search">
+                                </div>
+                            </form>
+                        </div>
+
+                        
+
+                        <!-- le bouton toggle du menu mobile qui est caché sur les grands écarns debut-->
+                        <svg class="bi bi-filter-left" width="2.5em" height="2.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        <!-- le bouton toggle du menu mobile qui est caché sur les grands écarns fin-->
+                        
+
+
+
+                        <!-- BLOCK DES USERS CONNECTES FIXE A L'EXTREME DROITE -->
+                        <div class="block-user-connectes">
+                            <div class="block-user-connectes-scrolable">
+
+                                <!-- ICON GLASSES MENUS USERS EN SESSION -->
+                                <div class="menus-connectes-icons">
+                                    <svg class="bi bi-app-indicator" width="1.8em" height="1.8em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+                                        <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    </svg>
+                                </div>
+
+
+                                <!-- PHOTOS USERS EN SESSION -->
+                                <div class="block-container-des-users-en-session">
+                                    
+                                    <!-- BOUCLES SUR LES UTILISATEURS CONNECTES -->
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-other.jpeg" width="35" class="img-user-en-session" title="Emmanuelle">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-paul.jpg" width="35" class="img-user-en-session" title="Paul">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-fabrice.jpg" width="35" class="img-user-en-session" title="Etienne">
+                                    </div>
+                                    
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-josias.jpg" width="35" class="img-user-en-session" title="Josias">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-welcome-admin.jpeg" width="35" class="img-user-en-session" title="Nathanael">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/user.jpg" width="35" class="img-user-en-session" title="Ezechiel">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-user1.jpeg" width="35" class="img-user-en-session" title="Brice">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-user2.jpg" width="35" class="img-user-en-session" title="Nelly"> 
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-user3.png" width="35" class="img-user-en-session" title="Michelle">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-user4.jpeg" width="35" class="img-user-en-session" title="Christelle">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/img/RS-profil-galerie2.jpg" width="35" class="img-user-en-session" title="Landry">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/img/RS-profil-galerie3.jpg" width="35" class="img-user-en-session" title="Elie">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-welcome-admin.jpeg" width="35" class="img-user-en-session" title="Nathanael">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/user.jpg" width="35" class="img-user-en-session" title="Ezechiel">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-user1.jpeg" width="35" class="img-user-en-session" title="Brice">
+                                    </div>
+
+                                    <div class="un-user-en-session">
+                                        <img src="ressources/icon/RS-user2.jpg" width="35" class="img-user-en-session" title="Nelly"> 
+                                    </div>
+                                    <!-- BOUCLES SUR LES UTILISATEURS CONNECTES -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--
+            LA PREMIERE NAVBAR DE HAUT FIN 
+        -->
+
+
+
+    </header>
+    <!--
+  		BALISE HEADER FIN
+    -->
+      
+
+
+
+
+
+
+
+
+
+
+    <!--
+        BALISE MAIN DEBUT
+    -->
+    <main role="main">
+
+
+
+        <!-- 
+            CONTAINER DE TOUS LES ELEMENTS VISIBLES EN DESSOUS DE LA BARRE DE NAVIGATION
+        -->
+        <div class="container-fluid">
+            <div class="row">
+
+
+
+
+
+
+
+
+                <!-- BLOCK BODY LEFT -->
+                <div class="body-block-de-gauche">
+                    
+
+                    <!-- BLOCK CARRE AVEC FOND BLANC CONTENANT LA PHOTO ET LE BOUTTON RETOUR -->
+                    <div class="block-with-info-user">
+                        <img src="ressources/icon/RS-paul.jpg" height="50" class="img-user-session-info">
+                        <p class="session-name name-block-with-info"> Paul Niango </p>
+                        <p class="session-during during-block-with-info">  Connecté(e) depuis 20 minutes  </p>
+                        <button type="button" class="btn btn-sm btn-back-communaute"> communauté </button>
+                    </div>
+
+
+                    <!-- DIV DE SEPARATION ENTRE LE CARRE DU HAUT ET LES BOUTONS DU BAS -->
+                    <div class="separation-1">
+                        <hr>
+                    </div>
+
+
+                    <!-- DIV DES BOUTONS EN DESSOUS DU TRAIT DE LA SEPARATION -->
+                    <div class="block-button-menus">
+
+                        <!-- BOUTON PARAMETRES -->
+                        <div>
+                            <button type="button" class="btn btn-menus btn-sm btn-logout"> 
+                                <svg class="bi bi-box-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.646 11.354a.5.5 0 0 1 0-.708L14.293 8l-2.647-2.646a.5.5 0 0 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
+                                    <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+                                    <path fill-rule="evenodd" d="M2 13.5A1.5 1.5 0 0 1 .5 12V4A1.5 1.5 0 0 1 2 2.5h7A1.5 1.5 0 0 1 10.5 4v1.5a.5.5 0 0 1-1 0V4a.5.5 0 0 0-.5-.5H2a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-1.5a.5.5 0 0 1 1 0V12A1.5 1.5 0 0 1 9 13.5H2z"/>
+                                </svg>
+                                &nbsp;  Déconnexion
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- BLOCK CONTAINER DES MESSAGES -->
+                <div class="block-container-messages">
+                    <div class="row">
+
+                        <!-- 
+                            BLOCK DES MESSAGES DEBUT
+                        -->
+                        <div class="block-des-messages">
+
+                            <!-- 
+                                BLOCK SCROLLABLE DEBUT
+                            -->
+                            <div class="block-des-messages-scrollable">
+                                
+                                <!-- 
+                                    BLOCK DE CONVERSATION D'UN JOUR DEBUT
+                                -->
+                                <div class="block-conversation-d-un-jour">
+
+                                    <!-- DATE DE LA CONVERSATION -->
+                                    <div class="date-conversation">
+                                        10 SEPTEMBRE 2020
+                                    </div>
+
+                                    <!-- 
+                                        BLOCK AFFICHAGE DES MESSAGES ECHANGES -->
+                                    <div class="block-affichage-messages">
+
+                                        <!-- 
+                                            BLOCK DE MES MESSAGES : MOI L'UTILISATEUR EN SESSION DEBUT
+                                        -->
+                                        <div class="block-mes-messages">
+
+                                            <!-- LE BLOCK DU PREMIER MESSAGE AU CAS OU J'ENVOIE PLUSIEURS MESSAGES D'UN COUP -->
+                                            <div class="block-premier-message-du-cycle">
+                                                <div class="row">
+                                                    <!-- BLOCK DE MA PHOTO -->
+                                                    <div class="block-ma-photo">
+                                                        <img src="ressources/icon/RS-paul.jpg" width="40" class="img-user-session-info">
+                                                    </div>
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu block-message-contenu-cliquable">
+                                                        <p class="moiEtHeure"> <span>moi</span> - <span class="heure-envoie">11h38</span> </p>
+                                                        <p class="message-content">
+                                                            Salut à partir de mars nous ouvrons un centre de formation intensif en programmation. 
+                                                            Programmeur front end intermédiaire, front end avancé, backend intermédiaire et back end avancé, programmeur Web intermédiaire et programmeur Web fullstack. En plus de d'autre formation telle que le développement logiciels et d'applications fullstack et niveau intermédiaire. 
+                                                            Ne ratez pas ça.
+                                                            <p class="block-icon-delete">
+                                                                <svg class="bi bi-trash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                                                </svg>
+                                                            </p>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <!-- BLOCK D'UN AUTRE MESSAGE APRES LE PREMIER DE LA BLOUCLE -->
+                                            <div class="block-autre-message-du-cycle">
+                                                <div class="row">
+                                                    <div class="block-ma-photo"><!-- LAISSER CE CONTENU VIDE --></div>
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu block-message-contenu-cliquable">
+                                                        <p class="moiEtHeure"> <span>moi</span> - <span class="heure-envoie">11h38</span> </p>
+                                                        <p class="message-content">
+                                                            J'attends une participation massive de votre côté ! Je vous envoie un fichier PDF
+                                                            <p class="block-icon-delete">
+                                                                <svg class="bi bi-trash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                                                </svg>
+                                                            </p>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <!-- MESSAGE AVEC FICHIER TEXT :  BLOCK D'UN AUTRE MESSAGE TOUJOURS DANS LA BLOUCLE -->
+                                            <div class="block-autre-message-du-cycle">
+                                                <div class="row">
+                                                    <div class="block-ma-photo"><!-- LAISSER CE CONTENU VIDE --></div>
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu block-message-contenu-cliquable">
+                                                        <p class="moiEtHeure"> <span>moi</span> - <span class="heure-envoie">11h42</span> </p>
+                                                        <p class="message-content">
+                                                            <svg class="bi bi-file-earmark-check" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M9 1H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h5v-1H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h5v2.5A1.5 1.5 0 0 0 10.5 6H13v2h1V6L9 1z"/>
+                                                                <path fill-rule="evenodd" d="M15.854 10.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708l1.146 1.147 2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                                            </svg>
+                                                            &nbsp;
+                                                            <span>New-project-document</span>
+                                                            <p class="block-icon-delete">
+                                                                <svg class="bi bi-trash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                                                </svg>
+                                                            </p>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- 
+                                            BLOCK DE MES MESSAGES : MOI L'UTILISATEUR EN SESSION FIN
+                                        -->
+
+
+
+
+
+
+
+
+
+                                        <!-- 
+                                            BLOCK DES MESSAGES D'UN AUTRE UTILISATEUR DEBUT
+                                        -->
+                                        <div class="block-messages-autre-utilisateur">
+                                            <!-- LE BLOCK DU PREMIER MESSAGE AU CAS OU IL ENVOIE AUSSI PLUSIEURS MESSAGES D'UN COUP -->
+                                            <div class="block-premier-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-autre-utilisateur block-message-contenu-cliquable">
+                                                        <p class="UtilisateurEtHeure"> <span>Fabrice</span> - <span class="heure-envoie">12h08</span> </p>
+                                                        <p class="message-content-autre-utilisateur">
+                                                           front end avancé, backend intermédiaire et back end avancé, programmeur Web intermédiaire et programmeur Web fullstack. 
+                                                           En plus de d'autre formation telle que le développement logiciels et d'applications fullstack et niveau intermédiaire. 
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo">
+                                                        <img src="ressources/icon/RS-fabrice.jpg" width="40" class="img-user-session-info">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <!-- BLOCK D'UN AUTRE MESSAGE APRES LE PREMIER DE LA BLOUCLE -->
+                                            <div class="block-autre-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-autre-utilisateur block-message-contenu-cliquable">
+                                                        <p class="UtilisateurEtHeure"> <span> Fabrice </span> - <span class="heure-envoie">12h12</span> </p>
+                                                        <p class="message-content-autre-utilisateur">
+                                                            Salut à partir de mars nous ouvrons un centre de formation intensif en programmation.
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo"><!-- LAISSER VIDE --></div>
+
+                                                </div>
+                                            </div>
+
+
+
+                                            <!-- MESSAGE AVEC IMAGES UPLOADS : BLOCK D'UN AUTRE MESSAGE APRES LE PREMIER DE LA BLOUCLE -->
+                                            <div class="block-autre-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-autre-utilisateur block-message-contenu-cliquable block-message-multimedias">
+                                                        <p class="UtilisateurEtHeure"> <span> Fabrice </span> - <span class="heure-envoie">12h15</span> </p>
+
+                                                        <!-- BLOCK DES IMAGES -->
+                                                        <div class="contenair-photo-uploads">
+
+                                                            <p class="message-pour-commenter-le-fichier-upload">  Voici des images qui expliquent un peu ! </p>
+                                                            <!-- Swiper -->
+                                                            <div class="swiper-container">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide"> <img src="ressources/img/RS-profil-publication2 - Copie.jpg" class="files-upload"></div>
+                                                                    <div class="swiper-slide"> <img src="ressources/img/RS-members-honor.jpeg" class="files-upload"></div>
+                                                                    <div class="swiper-slide"> <img src="ressources/img/RS-members-funders.jpg" class="files-upload"></div>
+                                                                    <div class="swiper-slide"><video src="ressources/videos/RS-timeline-video1.mp4" class="files-upload" controls></video></div>
+                                                                    <div class="swiper-slide"> <img src="ressources/img/RS-members-assistants.jpeg" class="files-upload"></div>
+                                                                </div>
+                                                                <!-- Add Pagination -->
+                                                                <div class="swiper-pagination"></div>
+                                                                <!-- Add Arrows -->
+                                                                <div class="swiper-button-next"></div>
+                                                                <div class="swiper-button-prev"></div>
+                                                            </div>
+                                                            
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo"><!-- LAISSER VIDE --></div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- 
+                                            BLOCK DES MESSAGES D'UN AUTRE UTILISATEUR FIN
+                                        -->
+
+
+
+
+
+
+
+
+
+                                        <!-- 
+                                            BLOCK DES MESSAGES D'UN AUTRE UTILISATEUR DEBUT
+                                        -->
+                                        <div class="block-messages-autre-utilisateur">
+                                            <!-- LE BLOCK DU PREMIER MESSAGE AU CAS OU IL ENVOIE AUSSI PLUSIEURS MESSAGES D'UN COUP -->
+                                            <div class="block-premier-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-autre-utilisateur block-message-contenu-cliquable">
+                                                        <p class="UtilisateurEtHeure"> <span>Emmanuelle</span> - <span class="heure-envoie">12h30</span> </p>
+                                                        <p class="message-content-autre-utilisateur">
+                                                            Bien reçu, heureuse d'être dans la communauté. J'attends les différents programmes !
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo">
+                                                        <img src="ressources/icon/RS-other.jpeg" width="40" class="img-user-session-info">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+                                            <!-- MESSAGE AVEC AUDIOS UPLOADS : BLOCK D'UN AUTRE MESSAGE APRES LE PREMIER DE LA BLOUCLE -->
+                                            <div class="block-autre-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-autre-utilisateur block-message-contenu-cliquable">
+                                                        <p class="UtilisateurEtHeure"> <span> Emmanuelle </span> - <span class="heure-envoie">12h33</span> </p>
+
+                                                        <!-- BLOCK DES IMAGES -->
+                                                        <div class="contenair-photo-uploads">
+                                                            <p class="message-pour-commenter-le-fichier-upload">  Ecoutez cet audio s'il vous plait </p>
+                                                            <audio src="ressources/audio/voca.m4a" controls></audio>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo"><!-- LAISSER VIDE --></div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- 
+                                            BLOCK DES MESSAGES D'UN AUTRE UTILISATEUR FIN
+                                        -->
+
+                                    </div>
+
+                                </div>
+                                <!-- 
+                                    BLOCK DE CONVERSATION D'UN JOUR FIN
+                                -->
+
+
+
+
+
+
+
+
+
+
+
+                                <!-- 
+                                    BLOCK DE CONVERSATION D'UN JOUR DEBUT
+                                -->
+                                <div class="block-conversation-d-un-jour">
+
+                                    <!-- DATE DE LA CONVERSATION -->
+                                    <div class="date-conversation">
+                                        HIER
+                                    </div>
+
+                                    <!-- 
+                                        BLOCK AFFICHAGE DES MESSAGES ECHANGES -->
+                                    <div class="block-affichage-messages">
+
+                                        <!-- 
+                                            BLOCK DE MES MESSAGES : MOI L'UTILISATEUR EN SESSION DEBUT
+                                        -->
+                                        <div class="block-mes-messages">
+
+                                            <!-- LE BLOCK DU PREMIER MESSAGE AU CAS OU J'ENVOIE PLUSIEURS MESSAGES D'UN COUP -->
+                                            <div class="block-premier-message-du-cycle">
+                                                <div class="row">
+                                                    <!-- BLOCK DE MA PHOTO -->
+                                                    <div class="block-ma-photo">
+                                                        <img src="ressources/icon/RS-paul.jpg" width="40" class="img-user-session-info">
+                                                    </div>
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu block-message-contenu-cliquable">
+                                                        <p class="moiEtHeure"> <span>moi</span> - <span class="heure-envoie">08h21</span> </p>
+                                                        <p class="message-content">
+                                                            Je vous envoie une vidéo de présentation de l'activité en dessous
+                                                            <p class="block-icon-delete">
+                                                                <svg class="bi bi-trash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                                                </svg>
+                                                            </p>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <!-- MESSAGE AVEC VIDEO UPLOADS:  BLOCK D'UN AUTRE MESSAGE APRES LE PREMIER DE LA BLOUCLE -->
+                                            <div class="block-autre-message-du-cycle">
+                                                <div class="row">
+                                                    <div class="block-ma-photo"><!-- LAISSER CE CONTENU VIDE --></div>
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu block-message-contenu-cliquable block-message-multimedias">
+                                                        <p class="moiEtHeure"> <span>moi</span> - <span class="heure-envoie">08h25</span> </p>
+                                                        <!-- BLOCK DES IMAGES -->
+                                                        <div class="contenair-photo-uploads">
+
+                                                            <p class="message-pour-commenter-le-fichier-upload">  Dites moi ce que vous pensez ! </p>
+                                                            <!-- Swiper -->
+                                                            <div class="swiper-container">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide"> <img src="ressources/img/RS-profil-publication2 - Copie.jpg" class="files-upload"></div>
+                                                                    <div class="swiper-slide"> <img src="ressources/img/RS-members-honor.jpeg" class="files-upload"></div>
+                                                                    <div class="swiper-slide"> <img src="ressources/img/RS-members-funders.jpg" class="files-upload"></div>
+                                                                    <div class="swiper-slide"><video src="ressources/videos/RS-timeline-video1.mp4" class="files-upload" controls></video></div>
+                                                                    <div class="swiper-slide"> <img src="ressources/img/RS-members-assistants.jpeg" class="files-upload"></div>
+                                                                </div>
+                                                                <!-- Add Pagination -->
+                                                                <div class="swiper-pagination"></div>
+                                                                <!-- Add Arrows -->
+                                                                <div class="swiper-button-next"></div>
+                                                                <div class="swiper-button-prev"></div>
+                                                            </div>
+
+                                                            <p class="block-icon-delete">
+                                                                <svg class="bi bi-trash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                                                </svg>
+                                                            </p>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- 
+                                            BLOCK DE MES MESSAGES : MOI L'UTILISATEUR EN SESSION FIN
+                                        -->
+
+
+
+
+
+
+
+
+
+                                        <!-- 
+                                            BLOCK DES MESSAGES DE L'ADMINISTRATEUR DEBUT
+                                        -->
+                                        <div class="block-messages-administrateur">
+                                            <!-- LE BLOCK DU PREMIER MESSAGE AU CAS OU IL ENVOIE AUSSI PLUSIEURS MESSAGES D'UN COUP -->
+                                            <div class="block-premier-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-administrateur block-message-contenu-cliquable">
+                                                        <p class="UtilisateurEtHeure">
+                                                            <svg class="bi bi-volume-up-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                                                                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                                                                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"/>
+                                                                <path fill-rule="evenodd" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                                                            </svg>
+                                                            <span>L'administrateur</span> - <span class="heure-envoie">9h17</span> 
+                                                        </p>
+                                                        <p class="message-content-administrateur">
+                                                            Salut à tous je voudrais vous remercier pour le professionalisme et le sens du respect
+                                                            dont vous faites preuve dans le forum. Je souhaite que les échanges puissent rester courtois
+                                                            et que personne ne s'écarte dans ses publication de notre thème de base !
+                                                            Cordialement ! 
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo">
+                                                        <img src="ressources/icon/RS-josias.jpg" width="40" class="img-user-session-info-administrateur">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <!-- BLOCK D'UN AUTRE MESSAGE APRES LE PREMIER DE LA BLOUCLE -->
+                                            <div class="block-autre-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-administrateur block-message-contenu-cliquable">
+                                                        <p class="UtilisateurEtHeure">
+                                                            <svg class="bi bi-volume-up-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                                                                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                                                                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"/>
+                                                                <path fill-rule="evenodd" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                                                            </svg>
+                                                            <span>L'administrateur</span> - <span class="heure-envoie">9h18</span>
+                                                        </p>
+                                                        <p class="message-content-administrateur">
+                                                            Sur ce, nous pouvons continuez la préparation de notre évènement. <br>
+                                                            Bonne journée !
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo"><!-- LAISSER VIDE --></div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- 
+                                            BLOCK DES MESSAGES DE L'ADMINISTRATEUR FIN
+                                        -->
+
+
+                                    </div>
+
+                                </div>
+                                <!-- 
+                                    BLOCK DE CONVERSATION D'UN JOUR FIN
+                                -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <!-- 
+                                    BLOCK DE CONVERSATION D'UN JOUR DEBUT
+                                -->
+                                <div class="block-conversation-d-un-jour">
+
+                                    <!-- DATE DE LA CONVERSATION -->
+                                    <div class="date-conversation">
+                                        AUJOURD'HUI
+                                    </div>
+
+                                    <!-- 
+                                        BLOCK AFFICHAGE DES MESSAGES ECHANGES -->
+                                    <div class="block-affichage-messages">
+
+
+
+
+
+                                        <!-- 
+                                            BLOCK DES MESSAGES DE L'ADMINISTRATEUR DEBUT
+                                        -->
+                                        <div class="block-messages-administrateur">
+                                            <!-- LE BLOCK DU PREMIER MESSAGE AU CAS OU IL ENVOIE AUSSI PLUSIEURS MESSAGES D'UN COUP -->
+                                            <div class="block-premier-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-administrateur block-message-contenu-cliquable">
+                                                        <p class="UtilisateurEtHeure">
+                                                            <svg class="bi bi-volume-up-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                                                                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                                                                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"/>
+                                                                <path fill-rule="evenodd" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                                                            </svg>
+                                                            <span>L'administrateur</span> - <span class="heure-envoie">07h07</span> 
+                                                        </p>
+                                                        <p class="message-content-administrateur">
+                                                            Salut à tous je voudrais vous remercier pour le professionalisme et le sens du respect
+                                                            dont vous faites preuve dans le forum. Je souhaite que les échanges puissent rester courtois
+                                                            et que personne ne s'écarte dans ses publication de notre thème de base !
+                                                            Cordialement ! 
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo">
+                                                        <img src="ressources/icon/RS-josias.jpg" width="40" class="img-user-session-info-administrateur">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <!-- BLOCK D'UN AUTRE MESSAGE APRES LE PREMIER DE LA BLOUCLE -->
+                                            <div class="block-autre-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-administrateur block-message-contenu-cliquable">
+                                                        <p class="UtilisateurEtHeure">
+                                                            <svg class="bi bi-volume-up-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                                                                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                                                                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"/>
+                                                                <path fill-rule="evenodd" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                                                            </svg>
+                                                            <span>L'administrateur</span> - <span class="heure-envoie">07h07</span> 
+                                                        </p>
+                                                        <p class="message-content-administrateur">
+                                                            Sur ce, nous pouvons continuez la préparation de notre évènement. <br>
+                                                            Bonne journée !
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo"><!-- LAISSER VIDE --></div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- 
+                                            BLOCK DES MESSAGES DE L'ADMINISTRATEUR FIN
+                                        -->
+
+
+
+
+
+
+                                        <!-- 
+                                            BLOCK DE MES MESSAGES : MOI L'UTILISATEUR EN SESSION DEBUT
+                                        -->
+                                        <div class="block-mes-messages">
+
+                                            <!-- LE BLOCK DU PREMIER MESSAGE AU CAS OU J'ENVOIE PLUSIEURS MESSAGES D'UN COUP : JE COMMENTE UNE PUBLICATION DE QUELQU'UN -->
+                                            <div class="block-premier-message-du-cycle">
+                                                <div class="row">
+                                                    <!-- BLOCK DE MA PHOTO -->
+                                                    <div class="block-ma-photo">
+                                                        <img src="ressources/icon/RS-paul.jpg" width="40" class="img-user-session-info">
+                                                    </div>
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu block-message-contenu-cliquable">
+                                                        <p class="titre-commentaire titre-commentaire-moi-administrateur">  Vous avez repondu à l'administrateur   </p>
+                                                        <hr>
+                                                        <div class="message-commente-preview">
+                                                            Salut à tous je voudrais vous remercier pour le professionalisme et le sens du respect ...
+                                                        </div>
+                                                        <hr>
+                                                        <p class="moiEtHeure"> <span>moi</span> - <span class="heure-envoie">07h10</span> </p>
+                                                        <p class="message-content">
+                                                            Bien reçu, Monsieur l'administrateur mdr ! Mais ça fait deux fois que tu publie hein !
+                                                            <p class="block-icon-delete">
+                                                                <svg class="bi bi-trash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                                                </svg>
+                                                            </p>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <!-- BLOCK D'UN AUTRE MESSAGE APRES LE PREMIER DE LA BLOUCLE : JE COMMENTE LA PUBLICATION DE QUELQU'UN -->
+                                            <div class="block-autre-message-du-cycle">
+                                                <div class="row">
+                                                    <div class="block-ma-photo"><!-- LAISSER CE CONTENU VIDE --></div>
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu block-message-contenu-cliquable">
+                                                        <p class="titre-commentaire titre-commentaire-moi-administrateur">  Vous avez repondu à l'administrateur   </p>
+                                                        <hr>
+                                                        <div class="message-commente-preview">
+                                                            Sur ce, nous pouvons continuez la préparation de notre évènement. <br>
+                                                            Bonne journée !
+                                                        </div>
+                                                        <hr>
+                                                        <p class="moiEtHeure"> <span>moi</span> - <span class="heure-envoie">07h11</span> </p>
+                                                        <p class="message-content">
+                                                            C'est que l'affaire est grave ! Plus serieusement , compris 7/7
+                                                            <p class="block-icon-delete">
+                                                                <svg class="bi bi-trash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                                                </svg>
+                                                            </p>
+                                                        </p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- 
+                                            BLOCK DE MES MESSAGES : MOI L'UTILISATEUR EN SESSION FIN
+                                        -->
+
+
+
+
+
+
+
+
+
+
+                                        <!-- 
+                                            BLOCK DES MESSAGES DE L'ADMINISTRATEUR DEBUT
+                                        -->
+                                        <div class="block-messages-administrateur">
+                                            <!-- LE BLOCK DU PREMIER MESSAGE AU CAS OU IL ENVOIE AUSSI PLUSIEURS MESSAGES D'UN COUP : L'ADMINISTRATEUR QUI REPOND A MON MESSAGE -->
+                                            <div class="block-premier-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-administrateur block-message-contenu-cliquable">
+                                                        <p class="titre-commentaire titre-commentaire-administrateur-a-moi">  L'administrateur vous a repondu   </p>
+                                                        <hr class="hr-admin">
+                                                        <div class="message-commente-preview message-commente-preview-admin">
+                                                            Bien reçu, Monsieur l'administrateur mdr ! Mais ça fait deux fois que tu publie hein !
+                                                        </div>
+                                                        <hr class="hr-admin">
+                                                        <p class="UtilisateurEtHeure">
+                                                            <svg class="bi bi-volume-up-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                                                                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                                                                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"/>
+                                                                <path fill-rule="evenodd" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                                                            </svg>
+                                                            <span>L'administrateur</span> - <span class="heure-envoie">07h07</span> 
+                                                        </p>
+                                                        <p class="message-content-autre-utilisateur">
+                                                            Biensure Paul, la répétition est pédagogique 
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo">
+                                                        <img src="ressources/icon/RS-josias.jpg" width="40" class="img-user-session-info-administrateur">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                        <!-- 
+                                            BLOCK DES MESSAGES DE L'ADMINISTRATEUR FIN
+                                        -->
+
+
+
+
+
+
+
+                                        <!-- 
+                                            BLOCK DES MESSAGES D'UN AUTRE UTILISATEUR DEBUT
+                                        -->
+                                        <div class="block-messages-autre-utilisateur">
+                                            <!-- LE BLOCK DU PREMIER MESSAGE AU CAS OU IL ENVOIE AUSSI PLUSIEURS MESSAGES D'UN COUP : UN UTILISATEUR QUI REPOND A L'UTILISATEUR EN SESSION -->
+                                            <div class="block-premier-message-du-cycle">
+                                                <div class="row">
+
+                                                    <!-- BLOCK MESSAGE CONTENU -->
+                                                    <div class="block-message-contenu-autre-utilisateur block-message-contenu-cliquable">
+                                                        <p class="titre-commentaire titre-commentaire-user-a-moi">  Emmanuelle vous a repondu   </p>
+                                                        <hr class="hr-autre-user">
+                                                        <div class="message-commente-preview message-commente-preview-admin">
+                                                            Bien reçu, Monsieur l'administrateur mdr ! Mais ça fait deux fois que tu publie hein !
+                                                        </div>
+                                                        <hr class="hr-autre-user">
+                                                        <p class="UtilisateurEtHeure"> <span>Emmanuelle</span> - <span class="heure-envoie">12h30</span> </p>
+                                                        <p class="message-content-autre-utilisateur">
+                                                           Paul, attation du seras retirer de la com hein gagagagagagag !
+                                                        </p>
+                                                    </div>
+
+                                                    <!-- BLOCK DE SA PHOTO -->
+                                                    <div class="block-sa-photo">
+                                                        <img src="ressources/icon/RS-other.jpeg" width="40" class="img-user-session-info">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- 
+                                            BLOCK DES MESSAGES D'UN AUTRE UTILISATEUR FIN
+                                        -->
+                                        
+
+
+
+                                        
+
+
+                                    </div>
+
+                                </div>
+                                <!-- 
+                                    BLOCK DE CONVERSATION D'UN JOUR FIN
+                                -->
+
+
+
+
+
+
+
+
+                            </div>
+                            <!-- 
+                                BLOCK SCROLLABLE FIN
+                            -->
+
+                        </div>
+                        <!-- 
+                            BLOCK DES MESSAGES FIN
+                        -->
+
+
+
+
+
+
+
+                        <!-- POPUP AJOUTER FICHIER MULTIMEDIA -->
+                        <div class="popup-fichier-ajouter-fichiers-multimedia-a-la-publication">
+                            <img src="ressources/icon/RS-communaute-folder.png" width="50" class="add-file" alt="add-file">
+                            <p class="add-file-text"> ajouter un fichier à la publication </p>
+                        </div>
+
+
+
+
+
+
+
+                        <!-- POPUP AJOUTER FICHIER MULTIMEDIA -->
+                        <div class="popup-affichages-multimedias">
+                            <div class="affichage-multimedia-block">
+                                <div class="row">
+                                    <div class="col-3"> <img src="ressources/img/RS-profil-galerie4.jpg" height="100"> </div>
+                                    <div class="col-3"> <img src="ressources/img/RS-welcome-cover1.jpeg" height="100"> </div>
+                                    <div class="col-3"> <video src="ressources/videos/jour.MOV" height="100"></video> </div>
+                                    <div class="col-3"> <img src="ressources/icon/file.png" height="100"> </div>
+
+                                    <div class="col-3 mulmedia-down"> </div>
+                                    <div class="col-3 mulmedia-down"> </div>
+                                    <div class="col-3 mulmedia-down"> </div>
+                                    <div class="col-3 mulmedia-down"> </div>
+                                </div>
+                            </div>
+                            <p class="add-multimedia-text"> ajouter d'autres fichiers </p>
+                        </div>
+
+
+
+
+
+                        <!-- 
+                            BLOCK DE L'INPUT DES MESSAGES TOTALEMENT EN BAS DEBUT
+                        -->
+                        <div class="block-de-linput-des-messages">
+
+                            <div class="row">
+                                <!-- BLOCK BUTTON PLUS -->
+                                <div class="block-button-plus">
+                                    <svg class="bi bi-plus-circle-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4a.5.5 0 0 0-1 0v3.5H4a.5.5 0 0 0 0 1h3.5V12a.5.5 0 0 0 1 0V8.5H12a.5.5 0 0 0 0-1H8.5V4z"/>
+                                    </svg>
+                                </div>
+
+
+                                <!-- INPUT DES MESSAGES -->
+                                <div class="input-des-messages">
+                                    <form class="form-inline ml-auto">
+                                        <div class="md-form my-0">
+                                            <input class="form-control" type="text" placeholder="Type something here...">
+                                        </div>
+                                    </form>
+                                </div>
+
+
+                                <!-- BUTTON ENVOYER LE MESSAGE -->
+                                <div class="block-button-send-message">
+                                    <svg class="bi bi-arrow-right-circle-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8.354 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- 
+                            BLOCK DE L'INPUT DES MESSAGES TOTALEMENT EN BAS DEBUT
+                        -->
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- COUVERTURE DU COMMENTAIRE -->
+        <div class="col-12 couverture-du-commentaire"></div>
+
+
+
+
+
+        <!--
+            BOITE DE COMMENTAIRES DEBUT
+        -->
+        <div class="col-xl-5 col-lg-6 col-md-7 col-sm-8 boite-de-commantaires">
+            <div class="row">
+                <!-- titre du commentaire -->
+                <div class="col-12">
+                    <h5 class="titre-du-commentaire"> Repondre à L'administrateur </h5>
+                </div>
+
+                <!-- photo du publier et conteneu à commenter debut -->
+                <div class="col-12 background-fond">
+                    <!-- container de la photo - du nom du users publier & le menu de la publication à l'extrême gauche -->
+                    <div class="col-12 photo-nom-user-et-menu-de-la-publication-block-a-commenenter">
+                        <nav class="navbar navbar navbar-publication-des-users">
+                            <!--  Nom et image du user publier -->
+                            <a class="navbar-brand" href="#">
+                                <img src="ressources/icon/RS-paul.jpg" height="30" alt="photo user" class="img-user-session-info photo-publier-a-commenter">
+                                <span class="nom-publier-a-commenter"> Paul  </span>
+                                <span class="temps-de-publication-a-commenter"> , Vous allez commenter ce message </span> </a>
+
+                            <!-- contenu de la publication à commenter -->
+                            <div>
+                                <ul class="navbar-nav mr-auto"></ul>
+                                <div>
+                                    <!-- si contenu est une video-->
+                                    <video src="ressources/videos/RS-timeline-video1.mp4" height="50" class="contenu-multimedia-a-commenter"></video>
+                                    <!-- si le contenu est une image<img src="asset/cover21.jpeg" class="contenu-multimedia-a-commenter" height="50">-->
+                                    <!-- si le contenu est un text<p class="text-contenu-a-commenter">Lorem ipsum dolor sit amet, consectetur adipisc ...</p>-->
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- photo du publier et conteneu à commenter fin -->
+                </div>
+
+                <!-- contenair du formulaire de commentaire -->
+                <div class="col-12 contenair-du-commentaire">
+                    <div class="row">
+                        <div class="col-11 input-commentaire-bloc">
+                            <input type="text" class="form-control" name="commentaire" placeholder="Ecrire la reponse ...">
+                        </div>
+
+                        <div class="col-1 input-coment-submit">
+                            <svg class="bi bi-arrow-right-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8.354 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--
+            BOITE DE COMMENTAIRES FIN
+        -->
+
+
+
+
+
+
+
+
+
+
+        <!--
+            SYTEME DE CHAT DEBUT
+        -->
+        <div class="col-lg-3 col-sm-5 grand-block-du-chat">
+
+            <!-- Le block de haut avec le linear gradient -->
+            <div class="container-du-haut-avec-fond-linear-gradient">
+                <div class="col-12">
+                    <div class="row">
+                        <!-- boutton fermer -->
+                        <div class="col-4 button-fermer">
+                            <img src="ressources/icon/RS-logout.png" height="20" alt="button fermer" class="fermer-le-chat">
+                        </div>
+
+                        <!-- container avec le text et la photo du destinataire -->
+                        <div class="col-12 block-du-text-et-la-photo">
+                            <h6> Vous échangez avec : </h6>
+                            <img src="ressources/icon/RS-welcome-admin.jpeg" height="35" class="photo-destinataire" alt="photo destinataire">
+                            <p> Nathanael </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Block contenant les messages -->
+            <div class="container-des-messages">
+                <div class="block-message-fixed">
+                    <div class="block-des-message-scroll">
+                        <!-- C'est ici qu'il faut mettre les messages du chat (la police doit être petite) -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenair de l'input -->
+            <div class="row container-de-l-input">
+
+                <div class="col-10 message-chat-input">
+                    <input type="text" class="form-control" name="message" placeholder="Ecrire un message ...">
+                </div>
+
+                <div class="col-2 message-chat-send">
+                    <svg class="bi bi-arrow-right-circle-fill" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8.354 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z"/>
+                    </svg>
+                </div>
+
+            </div>
+
+        </div>
+        <!--
+            SYTEME DE CHAT FIN
+        -->
+
+
+
+
+
+        <!-- POPUP DE SUPPRESSION D'UNE PUBLICATION -->
+        <div class="popup-supprimer-publication">
+            <a class="navbar-brand">
+                <img src="ressources/icon/remove.png" height="25" alt="remove post">
+                <span class="supprimer-publication-title"> &nbsp; Supprimer ce message ?  </span>
+            </a>
+            <p class="supprimer-publication-text"> 
+                Vous êtes sur le point de supprimer ce message. Confirmez-vous  ? 
+                <span class="btn btn-oui"> Oui </span>
+                <span class="btn btn-non"> Non </span>
+            </p>
+        </div>
+
+
+
+
+        <br/>
+        <br/>
+
+
+
+
+    </main>
+    <!--
+        BALISE MAIN FIN
+    -->
+
+
+
+
+</body>
+
+
+
+
+
+<!--
+    BALISE JAVASCRIPT (lIEN BOOTSTRAP 4 ET JQUERY)
+-->
+<script type="text/javascript" src="js/jQuery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- Swiper JS -->
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/RS-communaute-forum.js"></script>
+
+</html>

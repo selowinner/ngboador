@@ -1,0 +1,31 @@
+* PARAMETRES (A FAIRE A TETE REPOSEE APRES AVOIR EEMIS LE CODE ACTUEL A WILFRIED)
+- Harmoniser le code en tenant compte des suppression et de l'optimalité du niveau mobile
+
+
+* BILAN CODE HARMONISER
+
+- Authentifaication : RAS
+- Welcome : RAS
+- Timeline : ajout des publicités dans la box de suggestion des amis / popup de deconnexion
+- Article view : popup de deconnexion / popup publications
+- Recherche : RAS
+- Communauté: donner le code complet
+- Communauté galerie : donner le code complet
+- Communauté forum : donner le code complet
+- Article Communauté View : popup de deconnexion
+- Membres : RAS
+- Paiement : RAS
+- Profil : sessions infos top / margin blocks carré / les recommandations à droite / popup publications / popup de deconnexion
+- Profil Galerie : sessions infos top / margin blocks carré / popup publications / popup de deconnexion
+- Pages Assistance : donner le code complet
+
+
+
+* MODIFICATIONS RESTANTES
+
+** ORDI
+- NOTIFICATION DES RECOMMANDATIONS
+- PAGE PARAMETRE AVEC AJOUT LA LISTE DES AMIS RECOMMANDES
+
+** MOBILE
+- Pages Communauté: harmonisation (titre les infos de la communauté popup)

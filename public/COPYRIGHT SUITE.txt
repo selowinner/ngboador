@@ -1,0 +1,53 @@
+**** VOICI LES AJOUTS FAIS SUR TOUTES LES PAGES
+
+*** TIMELINE : 
+- DANS LA DEUXIEME NAVBAR A L'EXTREME DROITE {
+boutton de paramètre au click : apparait les bouttons de "deconnexion" , "paramètres" , "profil" (A voir dans le code commentaires à l'appui)
+}
+- A GAUCHE DE LA PAGE {
+* les catégries de membres : ajout de la catégorie assistant ; changement des classes (A voir dans le code commentaires à l'appui)
+* les publicités toujours à gauche en dessous des catégories : changement des classes (A voir dans le code commentaires à l'appui)
+}
+- AU CENTRE DE LA PAGE {
+* dans une publication au click de l'icon menu : changement de la box du menu de l'article (A voir dans le code commentaires à l'appui)
+* dans la suggestion des ami en dessous des articles : ajout d'une box de publicité (A voir dans le code commentaires à l'appui)
+}
+- A DROITE DE LA PAGE {
+* en dessous de la suggestion des ami : box des communauté : changement des classes (A voir dans le code commentaires à l'appui)
+}
+
+*** PAGE ARTICLE VIEW (pour voir l'article
+- DANS LA DEUXIEME NAVBAR A L'EXTREME DROITE {
+boutton de paramètre au click : apparait les bouttons de "deconnexion" , "paramètres" , "profil" (A voir dans le code commentaires à l'appui)
+}
+- AU CENTRE DE LA PAGE {
+sur l'article au click de l'icon menu : changement de la box du menu de l'article (A voir dans le code commentaires à l'appui)
+}
+
+*** RECHERCHE
+- DANS LA DEUXIEME NAVBAR A L'EXTREME DROITE {
+boutton de paramètre au click : apparait les bouttons de "deconnexion" , "paramètres" , "profil" (A voir dans le code commentaires à l'appui)
+}
+
+*** RS-COMMUNAUTE : prendre le code complet
+*** RS-COMMUNAUTE GALERIE : prendre le code complet
+*** RS-COMMUNAUTE VIEW ARTICLE : prendre le code complet
+*** RS-COMMUNAUTE FORUM : prendre le code complet
+*** RS-ASSISTANCE : prendre le code complet
+*** RS-ASSISTANT : prendre le code complet
+*** RS-ASSISTANCE-RAPPORT : prendre le code complet
+*** RS-ASSISTANCE-LECTURE MESSAGE : prendre le code complet
+
+*** PROFIL
+- DANS LA DEUXIEME NAVBAR A L'EXTREME DROITE {
+boutton de paramètre au click : apparait les bouttons de "deconnexion" , "paramètres" , "profil" (A voir dans le code commentaires à l'appui)
+}
+- BLOCK CONTENANT LA PHOTO DE PROFIL ET TOUTES LES INFORMATIONS DE SESSION {
+tout le contenu a été remplacé
+}
+- POPUP DE LA LISTE DES RECOMMANDATIONS {
+changement complet de toutes la popup
+}
+
+
+
