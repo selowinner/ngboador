@@ -1,5 +1,4 @@
 
-import { SexeEnum } from 'src/common/enum/Global.enum';
 import {
 	Entity,
 	Column,
@@ -16,17 +15,14 @@ import { FriendlyEntity } from '../timelines/friendly.entity';
 import { ReactionEntity } from '../timelines/reaction.entity';
 
 @Entity()
-export class UsersEntity extends BaseEntity {
+export class CommunityEntity extends BaseEntity {
 	@PrimaryGeneratedColumn() id: number;
 
 	@Column({ length: 25 })
 	name: string;
 
-	@Column({ length: 110 })
-	firstname: string;
-
-	// @Column({ length: 50 })
-	// pseudo: string;
+	@Column({ length: 255 })
+	descryption: string;
 
 	@Column({ length: 50 })
 	ref: string;
@@ -34,50 +30,15 @@ export class UsersEntity extends BaseEntity {
 	@Column({ length: 50, default: '' })
 	profil: string;
 
-	@Column({ length: 50 })
-	email: string;
-
-	@Column({ length: 50, default: '' })
-	number: string;
-
-	@Column({ length: 50 })
-	prefix: string;
-
-	@Column({ length: 50, default: '' })
-	quartier: string;
-
-	@Column({ length: 50, default: '' })
-	commune: string;
-
-	@Column({ length: 50, default: '' })
-	ville: string;
-
-	@Column({ length: 50 })
-	countrie: string;
-
-	@Column({ length: 50 })
-	subregion: string;
-
-	@Column({ length: 50 })
-	region: string;
-
-	@Column({ length: 50, default: SexeEnum.Femme})
-	sexe: SexeEnum.Homme | SexeEnum.Femme;
-
-	@Column({ length: 255 })
-	password: string;
-
-	@Column({ length: 255, default: '' })
-	motif: string;
+	
 
 	@Column({ type: 'int' })
 	recovery: number;
 
+  // type 1 is for public communauty
+  // type 0 is for private communauty
 	@Column({ default: 1 })
-	roleid: number;
-
-	@Column({default: true})
-	isConnect: boolean;
+	type: number;
 
 	// @ManyToOne(() => RoleEntity, (role) => role.users)
 	// @JoinColumn({ name: 'roleid' })

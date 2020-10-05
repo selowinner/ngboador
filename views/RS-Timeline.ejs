@@ -665,7 +665,7 @@
                         </div>
 
                         <div class="row itemBlocDeconnexion2">
-                            <h6> Déconnexion </h6>
+                            <h6><a href="/logout">Déconnexion</a> </h6>
                         </div>
                     </div>
 
@@ -1843,53 +1843,14 @@
 
                             <div class="col-12">
                                 <div class="row">
-                                    <!-- ami suggeré -->
-                                    <a class="une-suggestion">
-                                        <img src="ressources/icon/RS-fabrice.jpg" class="mr-1 image-rounded" height="28">
-                                        <span class="ami-suggere"> Etienne Dibi </span>
+                                    <% propositionsUser.forEach(function(value){ %>
+                                    <a class="une-suggestion" data-ref="<%= value.ref %>">
+                                        <img src="../ressources/icon/<%= value.profil %>" class="mr-1 image-rounded" height="28">
+                                        <span class="ami-suggere"> <%= value.fullName %> </span>
                                     </a>
-
                                     <!-- ami suggeré -->
-                                    <a class="une-suggestion">
-                                        <img src="ressources/icon/RS-welcome-admin.jpeg" class="mr-1 image-rounded" height="28">
-                                        <span class="ami-suggere"> Randy Soumah </span>
-                                    </a>
-
-                                    <!-- ami suggeré -->
-                                    <a class="une-suggestion">
-                                        <img src="ressources/icon/RS-user5.png" class="mr-1 image-rounded" height="28">
-                                        <span class="ami-suggere"> Wilfried Coré </span>
-                                    </a>
-
-                                    <!-- ami suggeré -->
-                                    <a class="une-suggestion">
-                                        <img src="ressources/icon/RS-fabrice.jpg" class="mr-1 image-rounded" height="28">
-                                        <span class="ami-suggere"> Etienne Dibi </span>
-                                    </a>
-
-                                    <!-- ami suggeré -->
-                                    <a class="une-suggestion">
-                                        <img src="ressources/icon/RS-welcome-admin.jpeg" class="mr-1 image-rounded" height="28">
-                                        <span class="ami-suggere"> Randy Soumah </span>
-                                    </a>
-
-                                    <!-- ami suggeré -->
-                                    <a class="une-suggestion">
-                                        <img src="ressources/icon/RS-user5.png" class="mr-1 image-rounded" height="28">
-                                        <span class="ami-suggere"> Wilfried Coré </span>
-                                    </a>
-
-                                    <!-- ami suggeré -->
-                                    <a class="une-suggestion">
-                                        <img src="ressources/icon/RS-fabrice.jpg" class="mr-1 image-rounded" height="28">
-                                        <span class="ami-suggere"> Etienne Dibi </span>
-                                    </a>
-
-                                    <!-- ami suggeré -->
-                                    <a class="une-suggestion">
-                                        <img src="ressources/icon/RS-welcome-admin.jpeg" class="mr-1 image-rounded" height="28">
-                                        <span class="ami-suggere"> Randy Soumah </span>
-                                    </a>
+                                    <% }); %>
+                                    
 
                                 </div>
                             </div>

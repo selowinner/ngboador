@@ -6,7 +6,6 @@ import { AdminModule } from './admin/admin/admin.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './client/users/users.module';
 import { TimelinesModule } from './client/timelines/timelines.module';
-import { CommunityModule } from './client/community/community.module';
 
 @Module({
   imports: [
@@ -15,7 +14,6 @@ import { CommunityModule } from './client/community/community.module';
     AdminModule,
     UsersModule,
     TimelinesModule,
-    CommunityModule,
   ],
   controllers: [AppController],
   providers: [
